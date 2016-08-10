@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+
+__author__ = 'Continuum Analytics'
+__email__ = 'conda@continuum.io'
+__version__ = '0.1.0_1'
+
+from ._version import get_versions
+__version__ = get_versions()['version']
+del get_versions
