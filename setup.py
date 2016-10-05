@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
+# import is here just to test https://github.com/conda/conda-build/issues/1429
+from Cython.Distutils import build_ext
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -50,5 +52,8 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     test_suite='tests',
-    tests_require=test_requirements
+    tests_require=test_requirements,
+    entry_points={
+        'console_scripts': ['entry=conda_version_test.manual_entry:main'],
+    }
 )
