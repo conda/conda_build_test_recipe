@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
+import versioneer
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -16,7 +17,6 @@ requirements = [
 test_requirements = [
     # TODO: put package test requirements here
 ]
-import versioneer
 setup(
     name='conda_version_test',
     version=versioneer.get_version(),
