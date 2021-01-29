@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import versioneer
 
 from setuptools import setup
 
@@ -16,7 +17,6 @@ requirements = [
 test_requirements = [
     # TODO: put package test requirements here
 ]
-import versioneer
 setup(
     name='conda_version_test',
     version=versioneer.get_version(),
