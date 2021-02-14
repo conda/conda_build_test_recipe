@@ -3,6 +3,7 @@
 import versioneer
 
 from setuptools import setup
+import versioneer
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
